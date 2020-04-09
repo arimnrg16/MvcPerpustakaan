@@ -15,7 +15,7 @@ namespace MvcPerpustakaan.Models
                 serviceProvider.GetRequiredService<
                     DbContextOptions<MvcPerpustakaanContext>>()))
             {
-                // Look for any movies.
+                // Look for any books.
                 if (context.Book.Any())
                 {
                     return;   // DB has been seeded

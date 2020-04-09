@@ -48,7 +48,7 @@ namespace MvcPerpustakaan.Controllers
             return View(bookGenreVM);
         }
 
-        // GET: books/Details/5
+        // GET: Books/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -66,7 +66,7 @@ namespace MvcPerpustakaan.Controllers
             return View(book);
         }
 
-        // GET: books/Create
+        // GET: Books/Create
         public IActionResult Create()
         {
             return View(new Book
@@ -80,7 +80,7 @@ namespace MvcPerpustakaan.Controllers
                 );
         }
 
-        // POST: books/Create
+        // POST: Books/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -96,7 +96,7 @@ namespace MvcPerpustakaan.Controllers
             return View(book);
         }
 
-        // GET: books/Edit/5
+        // GET: Books/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -112,7 +112,7 @@ namespace MvcPerpustakaan.Controllers
             return View(book);
         }
 
-        // POST: books/Edit/5
+        // POST: Books/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -133,7 +133,7 @@ namespace MvcPerpustakaan.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!bookExists(book.Id))
+                    if (!BookExists(book.Id))
                     {
                         return NotFound();
                     }
@@ -147,7 +147,7 @@ namespace MvcPerpustakaan.Controllers
             return View(book);
         }
 
-        // GET: books/Delete/5
+        // GET: Books/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -165,7 +165,7 @@ namespace MvcPerpustakaan.Controllers
             return View(book);
         }
 
-        // POST: books/Delete/5
+        // POST: Books/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -176,7 +176,7 @@ namespace MvcPerpustakaan.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool bookExists(int id)
+        private bool BookExists(int id)
         {
             return _context.Book.Any(e => e.Id == id);
         }

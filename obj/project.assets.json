@@ -12936,11 +12936,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Downloads\\PT Kairos\\MvcPerpustakaan\\MvcPerpustakaan.csproj",
+      "projectUniqueName": "D:\\Downloads\\PT Kairos\\MvcPerpustakaan\\MvcPerpustakaan\\MvcPerpustakaan.csproj",
       "projectName": "MvcPerpustakaan",
-      "projectPath": "D:\\Downloads\\PT Kairos\\MvcPerpustakaan\\MvcPerpustakaan.csproj",
+      "projectPath": "D:\\Downloads\\PT Kairos\\MvcPerpustakaan\\MvcPerpustakaan\\MvcPerpustakaan.csproj",
       "packagesPath": "C:\\Users\\Windows 10\\.nuget\\packages\\",
-      "outputPath": "D:\\Downloads\\PT Kairos\\MvcPerpustakaan\\obj\\",
+      "outputPath": "D:\\Downloads\\PT Kairos\\MvcPerpustakaan\\MvcPerpustakaan\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
